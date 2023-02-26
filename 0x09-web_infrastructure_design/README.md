@@ -117,4 +117,4 @@ This web infrastructure is a scaled up version of the infrastructure described S
 ##  Author
 sekhene pretty mohlabe
 
-###  Yonas Leykun
+###  Sekhene Pretty Mohlabe
