@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
+#!/usr/bin/envbash
 sudo service apache2 start
