@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #!
 
 =======
@@ -6,3 +7,10 @@
 #start apache2 inside docker                                                     
 service apache2 start
 >>>>>>> 63c6b5987daef9aa06f0f69025a1c67e41bd822c
+=======
+#!/usr/bin/env bash
+# Fixes docker issue
+# sudo docker run -p 8080:80 -d -it holbertonschool/265-0
+# id=$(sudo docker ps -fq image=holbertonschool/265-0:latest)
+service apache2 start
+>>>>>>> 1c525fb2a84c9029984262a2f86be502115a0110
