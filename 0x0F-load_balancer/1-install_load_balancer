@@ -17,7 +17,7 @@ frontend  pretty-frontend
 backend pretty-backend
         balance roundrobin
         server 113527-web-01 54.161.239.157:80 check
-        server 113527-web-02 54.157.159.85:80 check
+        server 113527-web-02 54.210.94.50:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
