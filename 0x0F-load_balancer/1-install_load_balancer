@@ -14,7 +14,7 @@ frontend  pretty-frontend
         bind *:80
         mode http
         default_backend yonas-backend
-backend yonas-backend
+backend pretty-backend
         balance roundrobin
         server 113527-web-01 54.161.239.157:80 check
         server 113527-web-02 54.157.159.85:80 check
