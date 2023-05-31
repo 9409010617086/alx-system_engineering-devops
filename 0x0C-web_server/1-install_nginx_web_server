@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-#This script installs and configures a nginx web server
-apt-get -y update
-apt-get -y install nginx
-ufw allow 'Nginx HTTP'
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
-service nginx restart
+# Configure your Nginx server sot that /redirect_me is redirecting ot another page
+sudo apt update
+sudo apt install -y nginx
+sudo apt install -y sed
+sudo ufw allow 'Nginx HTTP'
+echo "Hello World!" | sudo tee /var/www/html/index.html
+sudo sed -i 's/server_name _;$/server_name _;\n\n\tlocation \/redirect_me {\n\t\treturn 301 https:\/\/www\.youtube\.com\/watch\?v=QH2-TGUlwu4;\n\t}\n/' /etc/nginx/sites-enabled/default
+sudo service nginx restart
